@@ -46,8 +46,8 @@ create table Player(
 );
 create table Fan(
                     id serial primary key,
-                    first_name varchar(50) not null,
-                    last_name varchar(50) not null,
+                    first_name varchar(100) not null,
+                    last_name varchar(100) not null,
                     lovely_team integer references Team(id)
 );
 create table Coach(
